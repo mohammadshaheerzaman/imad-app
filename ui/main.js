@@ -5,4 +5,4 @@ var img = document.getElementById('madi');
 
 img.onclick = function(){
     img.sytle.marginLeft = '100px';
-}
+};
