@@ -1,5 +1,8 @@
 console.log('Loaded!');
 var element = document.getElementById('main-text');
-console.log(element);
-element.innerHTML = "New Value";
-console.log(element);
+
+var img = document.getElementById('madi');
+
+img.onclick = function(){
+    img.sytle.marginLeft = '100px';
+}
