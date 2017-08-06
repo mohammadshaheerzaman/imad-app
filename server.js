@@ -22,10 +22,10 @@ var articles = {
     content: '<p>This is article two. This is article two. This is article two. This is article two. This is article two.</p>'
         },
 'article-three':{
-    title:'Article Two | Mohammad Shaheer Zaman',
+    title:'Article Three | Mohammad Shaheer Zaman',
     date: '8th August, 2017',
     heading: 'Article Two',
-    content: '<p>This is article two. This is article two. This is article two. This is article two. This is article two.</p>'
+    content: '<p>This is article three. This is article three. This is article three. This is article three. This is article three.</p>'
     }
 };
     
