@@ -45,6 +45,6 @@ submit.onclick = function(){
     };
     var nameValue = document.getElementById('name');
     var name = nameValue.value;
-    request.open('GET','http://shaheermanuu.imad.hasura-app.io/submit-name'+name,true);
+    request.open('GET','http://shaheermanuu.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
  };
