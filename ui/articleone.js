@@ -7,11 +7,11 @@ submit.onclick = function(){
   if(request.readyState === XMLHttpRequest.DONE)  {
       if(request.status == 200)
     {
-    var names = request.responseText;
-    names = JSON.parse(names);
+    var comments = request.responseText;
+    comments = JSON.parse(comments);
      var ul = '';
-    for(var i=0;i<names.length;i++){
-        ul += '<li>' + names[i] + '</li>';
+    for(var i=0;i<comments.length;i++){
+        ul += '<li>' + commens[i] + '</li>';
     }
     var unlist = document.getElementById('unordered');
     unlist.innerHTML =  ul;
@@ -22,7 +22,7 @@ submit.onclick = function(){
     };
     var nameValue = document.getElementById('commentid');
     var name = nameValue.value;
-    request.open('GET','http://shaheermanuu.imad.hasura-app.io/articleName?comments='+name,true);
+    request.open('GET','http://shaheermanuu.imad.hasura-app.io/submit-comment?name='+name,true);
     request.send(null);
  };
 
