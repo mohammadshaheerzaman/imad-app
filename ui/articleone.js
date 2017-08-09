@@ -1,6 +1,7 @@
 var submit = document.getElementById('commentsubmit');
 submit.onclick = function(){
-  
+  console.log("Hello");
+  /*
   var request = new XMLHttpRequest();
     
     request.onreadystatechange = function(){
@@ -23,6 +24,6 @@ submit.onclick = function(){
     var nameValue = document.getElementById('commentid');
     var name = nameValue.value;
     request.open('GET','http://shaheermanuu.imad.hasura-app.io/submit-comment?name='+name,true);
-    request.send(null);
+    request.send(null);*/
  };
 
