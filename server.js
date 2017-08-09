@@ -62,6 +62,8 @@ var htmlTemplate = `
           <input type="submit" value="Submit" id="commentsubmit">
         </div>
        </div>
+       <script type="text/javascript" src="/ui/articleone.js">
+        </script>
     </body>
 </html>`;
 return htmlTemplate;
