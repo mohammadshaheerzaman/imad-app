@@ -70,8 +70,7 @@ var htmlTemplate = `
           <ul>${bulletedcomments}</ul>
         </div>
         </div>
-       <script type="text/javascript" src="/ui/articleone.js">
-        </script>
+       
     </body>
 </html>`;
 return htmlTemplate;
