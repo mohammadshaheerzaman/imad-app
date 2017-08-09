@@ -29,18 +29,18 @@ var articles = {
     }
 };
     
- var comments[];   
-function createTemplate(data, comment){
+   
+function createTemplate(data){
 var title = data.title;
 var heading = data.heading;
 var date = data.date;
 var content = data.content;
-var bulletedcomments = '';
+//var bulletedcomments = '';
 
-comments.push(comment);
-for(var i=0;i<comments.length;i++){
-    bulletedcomments += '<li>' + comments[i] + '</li>';    
-}
+//comments.push(comment);
+//for(var i=0;i<comments.length;i++){
+  //  bulletedcomments += '<li>' + comments[i] + '</li>';    
+//}
 
     
 var htmlTemplate = `
@@ -67,7 +67,7 @@ var htmlTemplate = `
           <hr/>
           <input type="text" id="commentid" placeholder="comments">
           <input type="submit" value="Submit" id="commentsubmit">
-          <ul>${bulletedcomments}</ul>
+          <ul></ul>
         </div>
         </div>
        
@@ -95,12 +95,12 @@ app.get('/submit-name', function (req, res) {
   res.send(JSON.stringify(names));
 });
 
-var comments = [];
+//var comments = [];
 app.get('/:articleName', function(req,res){
     
     var articleName = req.params.articleName;
-    var comment = req.query.comments;
-    res.send(createTemplate(articles[articleName],comment));
+    //var comment = req.query.comments;
+    res.send(createTemplate(articles[articleName]));
    
 });
 
