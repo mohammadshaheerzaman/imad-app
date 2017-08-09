@@ -76,9 +76,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-var Counter = 0;
+var inc = 0;
 app.get('/counter', function(req,res){
-   Counter = Counter + 1;
+   inc = inc + 1;
    res.send(Counter.toString());
     
 });
