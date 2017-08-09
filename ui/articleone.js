@@ -22,7 +22,7 @@ submit.onclick = function(){
     };
     var nameValue = document.getElementById('commentid');
     var name = nameValue.value;
-    request.open('GET','http://shaheermanuu.imad.hasura-app.io/articleName?name='+name,true);
+    request.open('GET','http://shaheermanuu.imad.hasura-app.io/articleName?comments='+name,true);
     request.send(null);
  };
 
