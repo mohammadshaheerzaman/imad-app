@@ -11,7 +11,7 @@ submit.onclick = function(){
     comments = JSON.parse(comments);
      var ul = '';
     for(var i=0;i<comments.length;i++){
-        ul += '<li>' + commens[i] + '</li>';
+        ul += '<li>' + comments[i] + '</li>';
     }
     var unlist = document.getElementById('unordered');
     unlist.innerHTML =  ul;
