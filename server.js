@@ -70,7 +70,7 @@ var htmlTemplate = `
           <ul id="unordered"></ul>
         </div>
         </div>
-       
+       <script type="text/javascript" src="/ui/articleone.js"></script>
     </body>
 </html>`;
 return htmlTemplate;
