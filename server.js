@@ -70,8 +70,7 @@ var htmlTemplate = `
           <ul id="unordered"></ul>
         </div>
         </div>
-        <script type="text/javascript" src="/ui/articleone.js">
-        </script>
+        
     </body>
 </html>`;
 return htmlTemplate;
@@ -102,6 +101,7 @@ app.get('/submit-comment', function (req, res) {
   var comment = req.query.name;
   comments.push(comment);
   res.send(JSON.stringify(comments));
+  res.sendFile(path.join(__dirname, 'ui', 'articleone.js'));
 });
 
 
