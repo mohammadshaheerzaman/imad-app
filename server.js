@@ -101,7 +101,7 @@ app.get('/submit-comment', function (req, res) {
   var comment = req.query.name;
   comments.push(comment);
   res.send(JSON.stringify(comments));
-  res.sendFile(path.join(__dirname, 'ui', 'articleone.js'));
+ 
 });
 
 
@@ -110,6 +110,7 @@ app.get('/:articleName', function(req,res){
     var articleName = req.params.articleName;
     //var comment = req.query.comments;
     res.send(createTemplate(articles[articleName]));
+    res.sendFile(path.join(__dirname, 'ui', 'articleone.js'));
    
 });
 
