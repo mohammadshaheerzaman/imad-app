@@ -88,9 +88,14 @@ app.get('/submit-name', function (req, res) {
   res.send(JSON.stringify(names));
 });
 
+var comments = [];
 app.get('/:articleName', function(req,res){
+    
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
+    var comment = req.query.comments;
+   comments.push(comment);
+   res.send(JSON.stringify(comments));
 });
 
 
