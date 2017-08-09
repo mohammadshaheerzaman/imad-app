@@ -77,7 +77,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
-var inc = 'Hello';
+var inc = "Hello";
 app.get('/increment', function(req,res){
    
    res.send(inc);
