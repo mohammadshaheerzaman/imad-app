@@ -67,7 +67,7 @@ var htmlTemplate = `
           <hr/>
           <input type="text" id="commentid" placeholder="comments">
           <input type="submit" value="Submit" id="commentsubmit">
-          <ul></ul>
+          <ul id="unordered"></ul>
         </div>
         </div>
        
@@ -95,7 +95,15 @@ app.get('/submit-name', function (req, res) {
   res.send(JSON.stringify(names));
 });
 
-//var comments = [];
+var comments = [];
+app.get('/submit-comment', function (req, res) {
+    
+  var comment = req.query.name;
+  comments.push(comment);
+  res.send(JSON.stringify(comments));
+});
+
+
 app.get('/:articleName', function(req,res){
     
     var articleName = req.params.articleName;
