@@ -76,14 +76,14 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-/*
+
 var inc = 0;
 app.get('/increment', function(req,res){
    inc = inc + 1;
-   res.send(inc.toString());
+   res.send(inc);
     
 });
-*/
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
