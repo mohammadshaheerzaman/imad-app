@@ -77,7 +77,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 var inc = 0;
-app.get('/counter', function(req,res){
+app.get('/increment', function(req,res){
    inc = inc + 1;
    res.send(inc.toString());
     
